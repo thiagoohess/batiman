@@ -1,0 +1,112 @@
+/* styles.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+.header {
+    background-color: #000000;
+    text-align: center;
+    padding: 2rem;
+    border-bottom: 5px solid #FFD700;
+}
+
+.header h1 {
+    font-family: 'Bangers', cursive;
+    color: #FFD700;
+    font-size: 4rem;
+    letter-spacing: 4px;
+}
+
+.header img {
+    width: 300px;
+    margin-top: 1rem;
+}
+
+.about {
+    padding: 3rem 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about h2 {
+    font-family: 'Bangers', cursive;
+    color: #FFD700;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card {
+    background-color: #333333;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card h3 {
+    font-family: 'Bangers', cursive;
+    color: #FFD700;
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+
+.card p {
+    padding: 0 1rem 1rem;
+    color: #cccccc;
+}
+
+.villains {
+    background-color: #2a2a2a;
+    padding: 3rem 0;
+}
+
+.footer {
+    background-color: #000000;
+    text-align: center;
+    padding: 2rem;
+    border-top: 5px solid #FFD700;
+    margin-top: 3rem;
+}
+
+.footer p {
+    color: #FFD700;
+    margin: 0.5rem 0;
+}
+
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 2.5rem;
+    }
+    
+    .header img {
+        width: 200px;
+    }
+}
